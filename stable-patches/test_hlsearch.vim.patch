@@ -1,8 +1,8 @@
 diff --git a/src/testdir/test_hlsearch.vim b/src/testdir/test_hlsearch.vim
-index eb8fb873b..0d492a758 100644
+index 8bf7f0aae..bc7539b1f 100644
 --- a/src/testdir/test_hlsearch.vim
 +++ b/src/testdir/test_hlsearch.vim
-@@ -35,30 +35,30 @@ func Test_hlsearch()
+@@ -34,30 +34,30 @@ func Test_hlsearch()
    enew!
  endfunc
  

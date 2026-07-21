@@ -1,8 +1,8 @@
 diff --git a/src/testdir/test_syntax.vim b/src/testdir/test_syntax.vim
-index 8c56730da..ed22629e2 100644
+index d4a81dd65..cb2997ff3 100644
 --- a/src/testdir/test_syntax.vim
 +++ b/src/testdir/test_syntax.vim
-@@ -527,45 +527,45 @@ func Test_bg_detection()
+@@ -544,45 +544,45 @@ func Test_bg_detection()
    hi Normal ctermbg=NONE
  endfunc
  

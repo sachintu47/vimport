@@ -1,5 +1,5 @@
 diff --git a/src/pty.c b/src/pty.c
-index f11a22dcd..b8dea655f 100644
+index c615785c7..3cc7150db 100644
 --- a/src/pty.c
 +++ b/src/pty.c
 @@ -194,6 +194,12 @@ mch_openpty(char **ttyn)

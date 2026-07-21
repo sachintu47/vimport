@@ -1,8 +1,8 @@
 diff --git a/src/auto/configure b/src/auto/configure
-index 5f75592..3073980 100755
+index f5d6dea01..cac20e6f8 100755
 --- a/src/auto/configure
 +++ b/src/auto/configure
-@@ -16627,7 +16627,6 @@ printf %s "checking for NLS... " >&6; }
+@@ -16892,7 +16892,6 @@ printf %s "checking for NLS... " >&6; }
      have_gettext="no"
      if test -n "$MSGFMT"; then
        olibs=$LIBS

@@ -1,7 +1,7 @@
-diff --git i/src/ex_cmds.c w/src/ex_cmds.c
-index 5d9b722..c349e7d 100644
---- i/src/ex_cmds.c
-+++ w/src/ex_cmds.c
+diff --git a/src/ex_cmds.c b/src/ex_cmds.c
+index 6a1715a6b..370964ac7 100644
+--- a/src/ex_cmds.c
++++ b/src/ex_cmds.c
 @@ -14,6 +14,8 @@
  #include "vim.h"
  #include "version.h"
@@ -11,7 +11,7 @@ index 5d9b722..c349e7d 100644
  #include <float.h>
  
  static int linelen(int *has_tab);
-@@ -2862,6 +2864,10 @@ do_ecmd(
+@@ -2885,6 +2887,10 @@ do_ecmd(
  	}
      }
  
@@ -22,7 +22,7 @@ index 5d9b722..c349e7d 100644
      /*
       * If the file was changed we may not be allowed to abandon it:
       * - if we are going to re-edit the same file
-@@ -2880,7 +2886,6 @@ do_ecmd(
+@@ -2903,7 +2909,6 @@ do_ecmd(
  	goto theend;
      }
  

@@ -1,8 +1,8 @@
 diff --git a/src/testdir/test_startup.vim b/src/testdir/test_startup.vim
-index 949553350..3c01988d1 100644
+index bb8d86d7e..33907c180 100644
 --- a/src/testdir/test_startup.vim
 +++ b/src/testdir/test_startup.vim
-@@ -272,20 +272,20 @@ func Test_V_arg()
+@@ -319,20 +319,20 @@ func Test_V_arg()
  endfunc
  
  " Test that an error is shown when the defaults.vim file could not be read
