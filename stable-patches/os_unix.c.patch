@@ -1,8 +1,8 @@
 diff --git a/src/os_unix.c b/src/os_unix.c
-index dae5bbe82..ac61ee582 100644
+index 904421772..695777419 100644
 --- a/src/os_unix.c
 +++ b/src/os_unix.c
-@@ -1427,7 +1427,7 @@ mch_init(void)
+@@ -1436,7 +1436,7 @@ mch_init(void)
  
      out_flush();
  
@@ -11,7 +11,7 @@ index dae5bbe82..ac61ee582 100644
      // Check whether we were invoked with SIGTSTP set to be ignored. If it is
      // that indicates the shell (or program) that launched us does not support
      // tty job control and thus we should ignore that signal. If invoked as a
-@@ -5935,6 +5935,29 @@ mch_job_start(char **argv, job_T *job, jobopt_T *options, int is_terminal)
+@@ -6333,6 +6333,29 @@ mch_job_start(char **argv, job_T *job, jobopt_T *options, int is_terminal)
  	if (options->jo_cwd != NULL && mch_chdir((char *)options->jo_cwd) != 0)
  	    _exit(EXEC_FAILED);
  

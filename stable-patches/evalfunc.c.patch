@@ -1,8 +1,8 @@
 diff --git a/src/evalfunc.c b/src/evalfunc.c
-index 37010d7ba..e9bc95ff1 100644
+index 15b1eee87..0df8aed3b 100644
 --- a/src/evalfunc.c
 +++ b/src/evalfunc.c
-@@ -5911,6 +5911,13 @@ f_has(typval_T *argvars, typval_T *rettv)
+@@ -6887,6 +6887,13 @@ f_has(typval_T *argvars, typval_T *rettv)
  		1
  #else
  		0

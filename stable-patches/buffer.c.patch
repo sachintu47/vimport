@@ -1,5 +1,5 @@
 diff --git a/src/buffer.c b/src/buffer.c
-index 26e3ec969..0600b33a0 100644
+index 48a6bdc3d..550912f25 100644
 --- a/src/buffer.c
 +++ b/src/buffer.c
 @@ -26,6 +26,9 @@
@@ -12,7 +12,7 @@ index 26e3ec969..0600b33a0 100644
  
  
  #ifdef FEAT_EVAL
-@@ -2175,6 +2178,11 @@ buflist_new(
+@@ -2168,6 +2171,11 @@ buflist_new(
  {
      char_u	*ffname = ffname_arg;
      char_u	*sfname = sfname_arg;
@@ -24,7 +24,7 @@ index 26e3ec969..0600b33a0 100644
      buf_T	*buf;
  #ifdef UNIX
      stat_T	st;
-@@ -2183,6 +2191,70 @@ buflist_new(
+@@ -2176,6 +2184,70 @@ buflist_new(
      if (top_file_num == 1)
  	hash_init(&buf_hashtab);
  
@@ -95,7 +95,7 @@ index 26e3ec969..0600b33a0 100644
      fname_expand(curbuf, &ffname, &sfname);	// will allocate ffname
  
      /*
-@@ -2281,9 +2353,10 @@ buflist_new(
+@@ -2274,9 +2346,10 @@ buflist_new(
  
      if (ffname != NULL)
      {
@@ -108,7 +108,7 @@ index 26e3ec969..0600b33a0 100644
  
      clear_wininfo(buf);
      buf->b_wininfo = ALLOC_CLEAR_ONE(wininfo_T);
-@@ -2330,6 +2403,7 @@ buflist_new(
+@@ -2323,6 +2396,7 @@ buflist_new(
  	}
  	lastbuf = buf;
  
@@ -116,7 +116,7 @@ index 26e3ec969..0600b33a0 100644
  	if ((flags & BLN_REUSE) && buf_reuse.ga_len > 0)
  	{
  	    // Recycle a previously used buffer number.  Used for buffers which
-@@ -2384,6 +2458,13 @@ buflist_new(
+@@ -2377,6 +2451,13 @@ buflist_new(
  #endif
  
      buf->b_fname = buf->b_sfname;
@@ -129,4 +129,4 @@ index 26e3ec969..0600b33a0 100644
 +#endif
  #ifdef UNIX
      if (st.st_dev == (dev_T)-1)
- 	buf->b_dev_valid = FALSE;
+ 	buf->b_dev_valid = false;
