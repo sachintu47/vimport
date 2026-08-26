@@ -1,4 +1,4 @@
-# bump: vim-version /VIM_VERSION="(.*)"/ fetch:https://api.github.com/repos/vim/vim/tags?per_page=50|/"name":"v(\d+\.\d+\.\d+[06]0)"/
+# bump: vim-version /VIM_VERSION="(.*)"/ fetch:https://api.github.com/repos/vim/vim/tags?per_page=50|/"name":"v(\d+\.\d+\.\d+[06]1)"/
 VIM_VERSION="9.2.0950"
 
 export ZOPEN_BUILD_LINE="STABLE"
