@@ -21,4 +21,4 @@ jobs:
       - uses: actions/checkout@main
       - uses: zopencommunity/meta/actions@main
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.TEST_BUMP_TOKEN }}
